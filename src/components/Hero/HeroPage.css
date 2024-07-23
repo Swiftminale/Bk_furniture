@@ -1,0 +1,61 @@
+/* Carousel indicators styling */
+.carousel-indicators [data-bs-target] {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
+
+/* Carousel image styling */
+.carousel-img img {
+  display: block;
+  width: 100%;
+  height: 70%; /* Maintain aspect ratio */
+}
+
+/* Caption styling with blurred background */
+.blur-background {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+/* Default caption styling */
+.carousel-caption h3,
+.carousel-caption p {
+  color: black; /* Set the text color to black */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-img img {
+    height: 400px; /* Adjust image height for tablets */
+  }
+
+  .blur-background {
+    padding: 5px;
+  }
+
+  .carousel-caption h3,
+  .carousel-caption p {
+    font-size: 14px; /* Adjust font size for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-img img {
+    height: 300px; /* Adjust image height for mobile devices */
+  }
+
+  .blur-background {
+    padding: 5px;
+  }
+
+  .carousel-caption h3,
+  .carousel-caption p {
+    font-size: 12px; /* Adjust font size for mobile devices */
+  }
+}

@@ -1,0 +1,27 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: rgb(255, 135, 30); /* Updated text color */
+  font-size: large;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  color: rgb(255, 135, 30); /* Updated text color */
+  font-weight: 600;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.container-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.82); /* Shadow added */
+}

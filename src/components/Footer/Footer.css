@@ -1,0 +1,61 @@
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212529;
+  height: auto; /* Adjusted to fit content */
+  width: 100%;
+  padding: 10px; /* Added padding for spacing */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.text-center {
+  text-align: center;
+  color: white;
+  flex: 1; /* Allow this section to take up remaining space */
+}
+
+.logo {
+  width: 40px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: rgb(255, 135, 30); /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container-footer {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    margin: 5px; /* Adjust margin for better spacing on small screens */
+    font-size: 18px; /* Slightly smaller icons */
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons a {
+    font-size: 16px; /* Smaller icons for very small screens */
+  }
+}
